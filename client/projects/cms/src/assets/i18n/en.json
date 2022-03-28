@@ -98,7 +98,8 @@
     "MANAGEMENT": "Management",
     "SYSTEM": "System",
     "RESET_PASSWORD": "Please reset your password",
-    "FILE_MANAGER": "File Manager"
+    "FILE_MANAGER": "File Manager",
+    "SETTINGS": "Settings"
   },
   "MODULES": {
     "REMOVE_ITEMS": "Remove {{value}} items",

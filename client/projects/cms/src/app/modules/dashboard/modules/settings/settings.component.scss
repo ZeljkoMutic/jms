@@ -1,0 +1,60 @@
+:host {
+  display: block;
+  padding-left: 64px;
+
+  ::ng-deep {
+    .mat-radio-button.mat-accent .mat-radio-inner-circle, .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple), .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple, .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+      background-color: #262626;
+    }
+    .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+      border-color: #262626;
+    }
+  }
+}
+
+.title {
+  font-size: 24px;
+  height: 128px;
+  line-height: 128px;
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 48px;
+}
+
+.theme {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: white;
+  padding: 0 16px;
+  height: 48px;
+  transition: .2s;
+
+  &:hover:not(.active) {
+    background-color: rgba(0,0,0,.1);
+  }
+}
+
+.mat-flat-button {
+  width: 100%;
+  border-radius: 0;
+  min-height: 48px;
+}
+
+.mat-radio-button {
+  display: flex;
+  padding: 0 8px;
+  height: 48px;
+  background-color: white;
+  transition: .2s;
+
+  &:hover:not(.mat-radio-checked) {
+    background-color: rgba(0,0,0,.1);
+  }
+}
+
+.mat-radio-checked {
+  background-color: var(--sidebar-active);
+}
