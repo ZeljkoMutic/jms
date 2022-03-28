@@ -29,6 +29,10 @@
   color: var(--panel-tertiary) !important;
 }
 
+.mat-button, .mat-flat-button, .mat-stroked-button, .mat-raised-button {
+  border-radius: var(--website-button-r) !important;
+}
+
 
 
 /* Select
@@ -58,29 +62,29 @@
 
 .mat-form-field {
   font-size: 13px;
-  color: var(--panel-primary);
+  color: var(--fg-c-prim);
 }
 
 .mat-form-field.mat-form-field-invalid {
   .mat-form-field-outline, .mat-form-field-outline-thick {
-    color: var(--warn-theme) !important;
+    color: var(--theme-warn) !important;
   }
 }
 
 .mat-form-field-outline {
-  color: var(--panel-tertiary) !important;
+  color: var(--theme-border) !important;
 }
 
 .mat-form-field-outline-thick {
-  color: var(--panel-primary) !important;
+  color: var(--theme-fg-c-prim) !important;
 }
 
 .mat-form-field.mat-focused:not(.mat-form-field-invalid) .mat-form-field-outline-thick {
-  color: var(--primary-theme) !important;
+  color: var(--theme-primary) !important;
 }
 
 .mat-form-field-label {
-  color: var(--panel-secondary);
+  color: var(--theme-fg-c-sec);
 }
 
 // 'mat-form-field-has-hint' custom class for extra white space after hint
@@ -332,9 +336,9 @@ tr.mat-row.mat-row {
 }
 
 .mat-progress-bar.mat-accent {
-  & > .mat-progress-bar-buffer      { background: var(--accent-secondary); }
-  & > .mat-progress-bar-fill::after { background: var(--accent-theme); }
-  & > .mat-progress-bar-background  { fill      : var(--accent-theme); }
+  & > .mat-progress-bar-buffer      { background: var(--theme-accent-c); }
+  & > .mat-progress-bar-fill::after { background: var(--theme-accent); }
+  & > .mat-progress-bar-background  { fill      : var(--theme-accent); }
 }
 
 
@@ -342,16 +346,11 @@ tr.mat-row.mat-row {
 /* Card
  *============================================================================*/
 
-.mat-card {
-  --theme    : var(--panel-theme);
-  --primary  : var(--panel-primary);
-  --secondary: var(--panel-secondary);
-  --tertiary : var(--panel-tertiary );
-}
 .mat-card.mat-card {
-  box-shadow: 0 0 0 1px var(--panel-tertiary);
-  background: var(--panel-theme);
-  color: var(--panel-primary);
+  border-radius: var(--theme-card-r);
+  box-shadow: 0 0 0 1px var(--theme-border);
+  background: var(--theme-fg);
+  color: var(--theme-fg-c-prim);
 }
 
 .mat-card-header.mat-card-header {
@@ -360,7 +359,7 @@ tr.mat-row.mat-row {
   margin-bottom: 16px;
   margin-left: -16px;
   padding: 16px;
-  border-bottom: 1px solid var(--panel-tertiary);
+  border-bottom: 1px solid var(--theme-border);
   align-items: center;
 }
 
@@ -374,7 +373,7 @@ tr.mat-row.mat-row {
   margin-bottom: -16px;
   margin-left: -16px;
   padding: 16px;
-  border-top: 1px solid var(--panel-tertiary);
+  border-top: 1px solid var(--theme-border);
 }
 
 .mat-card-content.mat-card-content-inset {

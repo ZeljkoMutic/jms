@@ -30,33 +30,33 @@
  */
 
 $primary: (
-  100: var(--primary-theme),
-  500: var(--primary-theme),
-  700: var(--primary-theme),
+  100: var(--theme-primary),
+  500: var(--theme-primary),
+  700: var(--theme-primary),
   contrast: (
-    100: var(--primary-secondary),
-    500: var(--primary-primary),
-    700: var(--primary-primary)
+    100: var(--theme-primary-c),
+    500: var(--theme-primary-c),
+    700: var(--theme-primary-c)
   )
 );
 $accent: (
-  100: var(--accent-theme),
-  500: var(--accent-theme),
-  700: var(--accent-theme),
+  100: var(--theme-accent),
+  500: var(--theme-accent),
+  700: var(--theme-accent),
   contrast: (
-    100: var(--accent-secondary),
-    500: var(--accent-primary),
-    700: var(--accent-primary)
+    100: var(--theme-accent-c),
+    500: var(--theme-accent-c),
+    700: var(--theme-accent-c)
   )
 );
 $warn: (
-  100: var(--warn-theme),
-  500: var(--warn-theme),
-  700: var(--warn-theme),
+  100: var(--theme-warn),
+  500: var(--theme-warn),
+  700: var(--theme-warn),
   contrast: (
-    100: var(--warn-secondary),
-    500: var(--warn-primary),
-    700: var(--warn-primary)
+    100: var(--theme-warn-c),
+    500: var(--theme-warn-c),
+    700: var(--theme-warn-c)
   )
 );
 

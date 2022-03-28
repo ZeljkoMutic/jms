@@ -73,8 +73,8 @@
  *============================================================================*/
 
 .bg {
-  background-color: var(--theme);
-  color: var(--primary);
+  background-color: var(--theme-bg);
+  color: var(--theme-bg-c);
 }
 @each $group-name, $group in $colors-themes {
   .bg-#{$group-name} {
