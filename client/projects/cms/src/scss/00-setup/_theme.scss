@@ -11,11 +11,14 @@
  *============================================================================*/
 
 $colors-themes: (
-  primary: (
-    theme    : #3F50B5,
-    primary  : rgba(255,255,255,1),
-    secondary: rgba(255,255,255,.8),
-    tertiary : rgba(255,255,255,.15),
+  website: (
+    bg       : #f6f6f6,
+    bg-c     : #262626,
+    primary  : #3F50B5,
+    accent   : #ff4081,
+    warn     : #dc143c,
+    contrast : #ffffff,
+    border   : rgba(255,255,255,.15),
   ),
   accent: (
     theme    : #ff4081,
