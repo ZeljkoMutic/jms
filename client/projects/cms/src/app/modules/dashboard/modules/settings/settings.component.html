@@ -1,9 +1,38 @@
-<div class="grid ">
-  <div class="col-12 title flex ai-center">Settings</div>
-</div>
+<mat-toolbar role="heading" color="primary" class="sticky-header">
+  <span>Settings</span>
+</mat-toolbar>
 
-<div class="grid nogutter">
+<div class="grid">
   <div class="col-4">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{'SETTINGS.APPEARANCE' | transloco}}</mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content>
+        <mat-radio-group aria-label="Select an option">
+          <mat-radio-button value="1">Light theme</mat-radio-button>
+          <mat-radio-button value="2">Dark theme</mat-radio-button>
+          <button mat-flat-button color="primary">Create custom theme</button>
+        </mat-radio-group>
+      </mat-card-content>
+
+      <mat-card-actions class="ta-right">
+        <button mat-button>{{'GENERAL.SAVE' | transloco}}</button>
+      </mat-card-actions>
+    </mat-card>
+
+    <!--<h6>Appearance</h6>
+    <mat-radio-group aria-label="Select an option">
+      <mat-radio-button value="1">Light theme</mat-radio-button>
+      <mat-radio-button value="2">Dark theme</mat-radio-button>
+    </mat-radio-group>
+    <button mat-flat-button color="primary">Create custom theme</button>-->
+  </div>
+
+  <div class="col-8"></div>
+
+  <!--<div class="col-4">
     <div class="subtitle">Theme</div>
     <div class="theme">Light theme</div>
     <button mat-flat-button color="primary">Create custom theme</button>
@@ -11,5 +40,5 @@
   <div class="col-4"></div>
   <div class="col-4">
 
-  </div>
+  </div>-->
 </div>

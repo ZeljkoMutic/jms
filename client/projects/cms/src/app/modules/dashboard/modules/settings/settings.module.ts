@@ -8,6 +8,8 @@ import {LoadClickModule} from '@jaspero/ng-helpers';
 import {TranslocoModule} from '@ngneat/transloco';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatCardModule} from '@angular/material/card';
 
 const routes: Routes = [{
   path: '',
@@ -37,6 +39,9 @@ const routes: Routes = [{
     FormBuilderSharedModule,
     LoadClickModule,
     TranslocoModule,
+    MatRadioModule,
+    MatToolbarModule,
+    MatCardModule
   ]
 })
 export class SettingsModule { }
