@@ -20,6 +20,8 @@ import {roleUpdated} from './triggers/role-updated';
 import {userCreated} from './triggers/user-created';
 import {userDeleted} from './triggers/user-deleted';
 import {userDocumentUpdated} from './triggers/user-document-updated';
+import {statusUpdated} from './triggers/status-updated';
+import {inquiryCreated} from './triggers/inquiry-created';
 
 admin.initializeApp();
 
@@ -36,6 +38,8 @@ export const cms = {
   documentDeleted,
   documentWrite,
   triggerPasswordReset,
+  statusUpdated,
+  inquiryCreated,
   roleUpdated,
 
   // Callable
@@ -44,9 +48,9 @@ export const cms = {
   updateUser,
   getUser,
   updateEmail,
+  sampleEmail,
   exchangeToken,
   impersonate,
-  sampleEmail,
 
   // Rest
   exportData,

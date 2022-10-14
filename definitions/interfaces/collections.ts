@@ -2,9 +2,19 @@ export class Collections {
   static Users = 'users';
   static Roles = 'roles';
 	static UserInvites = 'user-invites';
+	static Inquiries = 'inquiries';
 
 	static AutomaticEmails = 'automatic-emails';
 	static SentEmails = 'sent-emails';
+
+	/**
+	 * Shop
+	 */
+	static Products = 'products';
+	static ProductCategories = 'product-categories';
+	static ProductTags = 'product-tags';
+	static Carts = 'carts';
+	static Orders = 'orders';
 
 	/**
 	 * Subcollections
